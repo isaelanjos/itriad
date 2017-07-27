@@ -38,10 +38,15 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Produtos', 'url' => ['/produto']],
-            ['label' => 'Transportadoras', 'url' => ['/transportadora']],
-            ['label' => 'Custos do Transporte', 'url' => ['/custo']],
+            ['label' => 'Produtos', 'url' => ['/produto/relatorio1']],
+            ['label' => 'Carrinho', 'url' => ['/carrinho']],
             ['label' => 'Instruções de Uso', 'url' => ['/site/help']],
+            ['label' => 'Administração', 'items' => [
+                '<li class="divider"></li>',
+                ['label' => 'Manter Produtos', 'url' => ['/produto']],
+                ['label' => 'Manter Transportadoras', 'url' => ['/transportadora']],
+                ['label' => 'Manter Custos da Transportadora', 'url' => ['/transportadoracusto']],
+            ]],
             // ['label' => 'About', 'url' => ['/site/about']],
             // ['label' => 'Contact', 'url' => ['/site/contact']],
             // Yii::$app->user->isGuest ? (
