@@ -15,9 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
         <ul>
             <li>O Projeto foi desenvolvido em Yii2, grande parte dele foi utilizado mais JS e PHP puro, o Yii2 ficou mais como base, e serviu para agilizar o desenvolvimento.</li>
 
-            <li>Os arquivo de configurações estão em ./projeto/config/ Se for o caso colocar pra rodar o projeto local, deve-se alterar o arquivo db.php e colocar as configurações locais (mysql).</li>
+            <li>Os arquivo de configurações estão em ./projeto/config/ Se for o caso colocar pra rodar o projeto local, deve-se alterar o arquivo db.php e colocar as configurações locais (mysql). O usuário e senha padrão do banco é <b>itriad</b>:<b>itriad</b> e o nome da base é <b>itriad</b>.</li>
 
-            <li>O entendimento que eu tive foi de que seria necessário o usuário selecionar itens(produtos/aparelhos) para que enviasse através da transportadora. Porém a pouco tempo tive o entendimento de que ná verdade estava sendo pedido apenas um grid contendo todos os aparelhos e no mesmo grid os calculos de quanto seria o frete. De forma que está atendendo a solicitação.</li>
+            <li>O entendimento que eu tive foi de que seria necessário o usuário selecionar itens(produtos/aparelhos) para que enviasse através da transportadora. Porém depois, tive o entendimento de que ná verdade estava sendo pedido apenas um grid contendo todos os aparelhos e no mesmo grid os calculos de quanto seria o frete. De forma que está atendendo a solicitação.</li>
 
             <li>O “Orçamento” ou “Carrinho” está sendo salvo utilizando sessão, e os calculos feitos em JS e PHP.</li>
 
