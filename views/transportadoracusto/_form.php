@@ -25,6 +25,10 @@ use app\models\Transportadora;
 
     <?= $form->field($model, 'custo_palete')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'custo_quilo')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'transportadora_id')->textInput() ?>
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Inserir' : 'Salvar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -22,6 +22,7 @@ $this->params['breadcrumbs'][] = $model->transportadora->nome;
             'custo_terra',
             'custo_agua',
             'custo_palete',
+            'custo_quilo',
 //            'transportadora_id',
         ],
     ]) ?>

@@ -31,13 +31,22 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'searchTransportadora',
                 'value' => 'transportadora.nome',
             ],
-
-            'custo_ar',
-            'custo_terra',
-            'custo_agua',
-            'custo_palete',
-            // 'transportadora_id',
-
+            [
+                'attribute' => 'custo_ar',
+                'format' => 'currency',
+            ],
+            [
+                'attribute' => 'custo_terra',
+                'format' => 'currency',
+            ],
+            [
+                'attribute' => 'custo_agua',
+                'format' => 'currency',
+            ],
+            [
+                'attribute' => 'custo_quilo',
+                'format' => 'currency',
+            ],
             [
                 'class' => 'yii\grid\ActionColumn',
                 'contentOptions'=>[ 'style'=>'width: 100px'],

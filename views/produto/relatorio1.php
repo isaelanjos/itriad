@@ -45,15 +45,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'peso',
             ],
             [ 
-                'label' => 'Frete do Produto',
+                'label' => 'Custo de Transporte',
                 'attribute' => 'custo_transporte',
                 'format' => 'currency',
+            ],
+            [
+                'label' => 'Max por Palete',
+                'attribute' => 'max_item_palete',
             ],
             [
                 'label' => '',
                 'format' => 'raw',
                 'value' => function ($dataProvider) {
-                    return Html::a('Adicionar', './carrinho/adicionar/id='.$dataProvider->id);
+                    return Html::a('Adicionar', './?r=carrinho/adicionar&id='.$dataProvider->id);
                 },
             ],
             // 'max_item_palete',

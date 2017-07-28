@@ -25,6 +25,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'custo_palete') ?>
 
+    <?php // echo $form->field($model, 'custo_quilo') ?>
+
     <?php // echo $form->field($model, 'transportadora_id') ?>
 
     <div class="form-group">

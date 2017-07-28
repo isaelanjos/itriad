@@ -19,7 +19,8 @@ class TransportadoracustoSearch extends TransportadoraCusto
     {
         return [
             [['id', 'transportadora_id'], 'integer'],
-            [['custo_ar', 'custo_terra', 'custo_agua', 'custo_palete'], 'number'],
+            [['custo_ar', 'custo_terra', 'custo_agua', 'custo_palete', 'custo_quilo'], 'number'],
+            [['searchTransportadora'], 'safe'],
         ];
     }
 
@@ -65,6 +66,7 @@ class TransportadoracustoSearch extends TransportadoraCusto
                 'custo_terra',
                 'custo_agua',
                 'custo_palete',
+                'custo_quilo',
                 'searchTransportadora'=> [
                     'asc' => ['transportadora.nome'=>SORT_ASC],
                     'desc' => ['transportadora.nome'=>SORT_DESC],
@@ -79,8 +81,11 @@ class TransportadoracustoSearch extends TransportadoraCusto
             'custo_terra' => $this->custo_terra,
             'custo_agua' => $this->custo_agua,
             'custo_palete' => $this->custo_palete,
+            'custo_quilo' => $this->custo_quilo,
             'transportadora_id' => $this->transportadora_id,
         ]);
+
+        $query->andFilterWhere(['like', 'transportadora.nome', $this->searchTransportadora]);
 
         return $dataProvider;
     }

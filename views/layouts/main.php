@@ -38,9 +38,10 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Produtos', 'url' => ['/produto/relatorio1']],
-            ['label' => 'Carrinho', 'url' => ['/carrinho']],
             ['label' => 'Instruções de Uso', 'url' => ['/site/help']],
+            ['label' => 'Produtos', 'url' => ['/produto/relatorio1']],
+            ['label' => 'Carrinho', 'url' => ['/carrinho/index']],
+            ['label' => 'Limpar Carrinho', 'url' => ['/carrinho/clear']],
             ['label' => 'Administração', 'items' => [
                 '<li class="divider"></li>',
                 ['label' => 'Manter Produtos', 'url' => ['/produto']],
