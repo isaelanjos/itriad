@@ -3,7 +3,7 @@
 return [
     'class' => 'yii\db\Connection',
     'dsn' => 'mysql:host=localhost;dbname=itriad',
-    'username' => 'root',
-    'password' => '!Ap@Ch3_',
+    'username' => 'itriad',
+    'password' => 'itriad',
     'charset' => 'utf8',
 ];
